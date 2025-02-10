@@ -44,3 +44,4 @@ ehthumbs.db
 [Tt]humbs.db
 *.log
 *.dwlt
+/ShadersSRP/.idea

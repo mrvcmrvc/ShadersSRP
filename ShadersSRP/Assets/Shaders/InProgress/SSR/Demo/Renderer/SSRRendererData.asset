@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-643985534562440480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3fb03d07a27b47a8ab1b62684e28ab7, type: 3}
+  m_Name: ScreenSpaceReflections
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  SSRSettings:
+    RenderPassEvent: 300
+    SSRShader: {fileID: -6465566751694194690, guid: 3bc002f489a5c406b8dccb4abf5fce7f,
+      type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10,7 +27,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
-  m_Name: BlurURPRenderer
+  m_Name: SSRRendererData
   m_EditorClassIdentifier: 
   debugShaders:
     debugReplacementPS: {fileID: 4800000, guid: cf852408f2e174538bcd9b7fda1c5ae7,
@@ -27,10 +44,10 @@ MonoBehaviour:
     probeSamplingDebugTexture: {fileID: 0}
     probeVolumeBlendStatesCS: {fileID: 0}
   m_RendererFeatures:
-  - {fileID: 7078499690397815591}
-  m_RendererFeatureMap: 27d3df04f7e13b62
+  - {fileID: -643985534562440480}
+  m_RendererFeatureMap: e06aea7b911a10f7
   m_UseNativeRenderPass: 0
-  xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
+  xrSystemData: {fileID: 0}
   postProcessData: {fileID: 0}
   m_AssetVersion: 2
   m_OpaqueLayerMask:
@@ -54,25 +71,3 @@ MonoBehaviour:
   m_DepthTextureFormat: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 1
---- !u!114 &7078499690397815591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56595b32faa91ef4581858c144b50245, type: 3}
-  m_Name: BlurFeature
-  m_EditorClassIdentifier: 
-  m_Active: 0
-  BlurSettings:
-    RenderPassEvent: 500
-    <BlurShader>k__BackingField: {fileID: -6465566751694194690, guid: 163f7abd1c0dc194f91e16c592a0d731,
-      type: 3}
-    <DownScaleCount>k__BackingField: 4
-    <ResolutionScaling>k__BackingField: 0.5
-    <Intensity>k__BackingField: 1
-    <DownScaleTexelOffset>k__BackingField: {x: -1, y: -1, z: 1, w: 1}
-    <UpScaleTexelOffset>k__BackingField: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}

@@ -7,38 +7,24 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TexturedShineShaderMaterial_Sliced
-  m_Shader: {fileID: -6465566751694194690, guid: bae7e9516936d084fa7d597d2b0e0b7e,
+  m_Name: Shader Graphs_ScreenSpaceReflectionShader
+  m_Shader: {fileID: -6465566751694194690, guid: 3bc002f489a5c406b8dccb4abf5fce7f,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _BLENDING_OVERLAY
-  - _ENABLED_TRUE
-  - _IMAGETYPE_SLICED
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ShineMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ShineTexture:
-        m_Texture: {fileID: 2800000, guid: e2317eb2d2d9d481b9ada5dd424268ba, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -53,19 +39,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BLENDING: 0
-    - _Delay: 0
-    - _ENABLED: 0
-    - _Glow: 0
-    - _IMAGETYPE: 1
-    - _ShineGlow: 0
-    - _XSpeed: 1
-    - _YSpeed: 0
-    m_Colors:
-    - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MaxRaySteps: 50
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _ReflectionIntensity: 0.5
+    - _StepSize: 0.1
+    m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &5382153925203659717
+--- !u!114 &4865935089042922020
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
