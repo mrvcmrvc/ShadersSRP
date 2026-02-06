@@ -15,8 +15,7 @@ MonoBehaviour:
   m_Active: 1
   SSRSettings:
     RenderPassEvent: 300
-    SSRShader: {fileID: -6465566751694194690, guid: 3bc002f489a5c406b8dccb4abf5fce7f,
-      type: 3}
+    SSRShader: {fileID: 4800000, guid: b324ae2c6970447e1a81efd3b8c36770, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
